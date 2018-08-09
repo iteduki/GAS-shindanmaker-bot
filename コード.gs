@@ -18,12 +18,10 @@ function shindan() {
     var idx = contentText.indexOf(start);
     
     var str = contentText.substring(idx);
-    str = str.slice(0, str.indexOf('</textarea>')).replace(start, "");
+    str = str.slice(0, str.indexOf("</textarea>")).replace(start, "");
     
     postTweet(str);
-  }
-  
-  
+  }  
 }
 
 function postTweet(tweet) {
